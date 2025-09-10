@@ -11,6 +11,11 @@ model = genai.GenerativeModel("gemini-2.5-flash")
 
 app = Flask(__name__)
 
+
+@app.route('/')
+def index():
+    return "Welcome to the home page!"
+
 @app.route('/predict', methods=['POST'])
 def predict():
     data = request.get_json(force=True)
