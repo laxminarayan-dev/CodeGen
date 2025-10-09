@@ -74,7 +74,7 @@ const NavLinks = ({ sidebarLinks = false }) => {
         sidebarLinks
           ? "flex md:hidden flex-col space-y-6"
           : "hidden md:flex flex-row gap-10"
-      }  text-lg font-mono`}
+      }  text-md font-mono`}
     >
       <li>
         <Link href="converter" className="hover:text-blue-600 hover:border-b-2">
